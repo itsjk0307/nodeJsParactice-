@@ -41,6 +41,8 @@
 // const serverInstance = new MyFirstClassSever(3000);
 // serverInstance.start();
 
+const { log } = require("console");
+const { LOADIPHLPAPI } = require("dns");
 const http = require("http");
 const url = require("url");
 
@@ -122,4 +124,5 @@ const server = http.createServer((req, res) => {
 const PORT = 8080;
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
+  console.log("this is for testing");
 });
