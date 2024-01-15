@@ -200,7 +200,7 @@ console.log(crudOperations.getAllUsers());
     data = data.filter((item) => item.id !== itemId);
 
     res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({ message: "Item deleted successfullyy" }));
+    res.end(JSON.stringify({ message: "Item deleted successfully" }));
   }
 });
 
